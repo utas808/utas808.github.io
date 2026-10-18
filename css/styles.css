@@ -1,1 +1,163 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans serif;
+  background-color: #F5F0E6;
+  color: #4B4035
+  line-height: 1.7;
+}
+
+/* Website header */
+header {
+  background-color: #E8DDCC;
+  color: #5C4938;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 10px 0 0;
+}
+
+/* Navigation menu */
+nav {
+  background-color: #FFFFFF
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
+  gap: 5px;
+  border-top: 1px solid #E4D8C6;
+  border-bottom: 1px solid #E4D8C6;
+}
+
+nav a {
+  color: #5C4938;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #D8C7AD;
+  color: #3D3025;
+}
+
+/* Main content */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+h2 {
+  color: #6B523D;
+  margin-top: 25px;
+}
+
+h3 {
+  color: #80684F;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Homepage topic cards */
+.topic-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 25px 0;
+}
+
+.topic-card {
+  background-color: #FFFFFF;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #E4D8C6;
+  border-bottom: 4px solid #D8C7AD;
+  box-shadow: 0 3px 10px rgba(80, 60, 40, 0.06);
+}
+
+.topic card h3 {
+  margin-top: 0;
+}
+
+.topic-card a {
+  color: #6B523D
+  font-weight: bold;
+}
+
+.topic-card:hover {
+  color: #96754F;
+}
+
+/* Images throughout the website */
+main img {
+  max-width: 100%;
+}
+
+/* General links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #E8DDCC;
+  color: #5C4938
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 40px;
+  border-top: 1px solid #D8C7AD;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Mobile and tablet layout */
+@media screen and (max-width: 700px) {
+  header {
+      padding: 28px 15px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+  }
+  main {
+    width: 92%;
+    margin: 20px auto;
+  }
+
+  .topic-container {
+      grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+      max-height: 320px;
+  }
+}
+  
