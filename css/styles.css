@@ -161,3 +161,38 @@ footer p {
   }
 }
   
+.island-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minimax(0, 1fr));
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.island-card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #E8DDCC;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.island-card h3 {
+  color: #5C4938;
+  margin-top: 0;
+}
+
+.island-image {
+  width: 100%;
+  max-width: 450px;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  margin: 12px 0 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .island-grid {
+    grid-template-columns: 1fr;
+  }
+}
